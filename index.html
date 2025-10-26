@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Trade or Fade - Bulk Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background abstract shapes -->
+  <div class="background-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+    <div class="shape shape-7"></div>
+    <div class="shape shape-8"></div>
+    <div class="shape shape-9"></div>
+    <div class="shape shape-10"></div>
+    <div class="shape shape-11"></div>
+    <div class="shape shape-12"></div>
+  </div>
+
+  <!-- Big faint background BULK title -->
+  <div class="background-text">BULK</div>
+
+  <!-- Large side mascots on background layer -->
+  <img src="mascot3.png" alt="Mascot right" class="background-mascot mascot-right" />
+  <img src="mascot3.png" alt="Mascot left" class="background-mascot mascot-left" />
+
+  <div class="game-container">
+    <!-- Branding: logo + title -->
+    <div class="brand">
+      <img src="logo.png" alt="Bulk logo" class="brand-logo" />
+      <h1 class="title">Trade or Fade</h1>
+    </div>
+
+    <!-- New record badge -->
+    <div id="newRecord" class="new-record" aria-hidden="true">NEW RECORD!</div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">Score: <span id="score">0</span></div>
+      <div class="stat">Level: <span id="level">1</span></div>
+      <div class="stat">High Score: <span id="highScore">0</span></div>
+    </div>
+
+    <!-- Lives -->
+    <div class="lives">
+      <div class="life" id="life1"></div>
+      <div class="life" id="life2"></div>
+      <div class="life" id="life3"></div>
+    </div>
+
+    <!-- Difficulty -->
+    <div class="difficulty" id="difficulty">Difficulty: Easy</div>
+
+    <!-- Chart -->
+    <div class="chart-container">
+      <div class="chart" id="chart"></div>
+    </div>
+
+    <!-- Timer -->
+    <div class="timer" id="timer">3</div>
+
+    <!-- Choice buttons with icons -->
+    <div class="buttons">
+      <button class="btn btn-up" id="btnUp">
+        <img src="mascot1.png" alt="UP" class="btn-icon" />
+        <span class="btn-label">UP</span>
+      </button>
+      <button class="btn btn-down" id="btnDown">
+        <img src="mascot2.png" alt="DOWN" class="btn-icon" />
+        <span class="btn-label">DOWN</span>
+      </button>
+    </div>
+
+    <!-- Result -->
+    <div class="result" id="result"></div>
+  </div>
+
+  <!-- Game Over overlay -->
+  <div class="game-over" id="gameOver">
+    <div class="game-over-content">
+      <h2>Game Over!</h2>
+      <p class="final-score">Final score: <span id="finalScore">0</span></p>
+      <p class="final-highscore">High score: <span id="finalHighScore">0</span></p>
+      <p class="final-newrecord" id="finalNewRecord" style="display:none;">New record!</p>
+      <button class="restart-btn" onclick="restartGame()">Play again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
